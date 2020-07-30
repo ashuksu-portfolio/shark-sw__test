@@ -4,6 +4,105 @@
 
 // * -------------------------------------------------
 
+.header {
+  background-color: $blue;
+
+  &__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+  }
+
+  &__search {
+  }
+}
+
+.menu {
+  &__list {
+    li {
+      display: inline-block;
+      min-width: 70px;
+      height: 33px;
+      margin-bottom: -3px;
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      padding-bottom: 3px;
+
+      &:hover,
+      &.select:hover {
+        background-color: $tomato-2;
+        transition: all 0.3s;
+      }
+
+      &.select {
+        background-color: rgba(0, 0, 0, 0.302);
+      }
+
+      & + li {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__list-link {
+    display: block;
+    min-width: 70px;
+    width: auto;
+    height: 30px;
+    padding: 5px 13px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    @include f-sb;
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  &__list-link:hover,
+  &__list-link.select {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+  }
+
+  &__list-link.select {
+    font-size: 14px;
+  }
+
+  &__sublist {
+    display: none;
+  }
+
+  &__sublist-link {
+  }
+}
+.search {
+  &__form {
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__btn {
+  }
+}
+
 // * -------------------------------------------------
 
 @import "media";
