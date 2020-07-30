@@ -1,13 +1,20 @@
 $(function () {
 
-   $(".feedback__slider").slick({
-      arrows: false,
+   $(".main-slider__inner").slick({
+      nextArrow:
+         '<button class="main-slider__arrows main-slider__arrows--next"></button>',
+      prevArrow:
+         '<button class="main-slider__arrows main-slider__arrows--prev"></button>',
+      centerMode: true,
       dots: true,
       infinite: true,
       speed: 500,
       // fade: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      initialSlide: 1,
    });
+
+
 
 
    // * --------------------------------------------------------
