@@ -1,14 +1,15 @@
 $(function () {
 
-   $(".main-slider__inner").slick({
+   $(".main-slider").slick({
       nextArrow:
          '<button class="main-slider__arrows main-slider__arrows--next"></button>',
       prevArrow:
          '<button class="main-slider__arrows main-slider__arrows--prev"></button>',
-      centerMode: true,
+      // centerMode: true,
       dots: true,
       infinite: true,
       speed: 500,
+      // slidesToShow: 1,
       // fade: true,
       cssEase: 'linear',
       initialSlide: 1,
