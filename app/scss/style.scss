@@ -841,6 +841,147 @@
 
 // !-------------------start footer ----------------------
 
+.footer {
+  &__content {
+    background-color: $blue;
+    padding: 40px 0 5px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    & > div + div {
+      margin-left: 30px;
+    }
+  }
+
+  &__contacts {
+    max-width: 370px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  &__logo img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  &__contacts-text {
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 25px;
+
+    &--info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    span {
+      display: inline-block;
+      max-width: 65px;
+      width: 100%;
+    }
+
+    a {
+      @include f-sbi;
+      font-size: 20px;
+    }
+  }
+
+  &__item {
+    max-width: 170px;
+    margin-bottom: 40px;
+  }
+
+  &__item-title {
+    color: rgba(#000, 0.5);
+    @include f-b;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  &__item-list {
+  }
+
+  &__item-link {
+    line-height: 24px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+
+    &::before {
+      content: "\f105";
+      font-family: "icomoon";
+      color: #fff;
+      font-size: 14px;
+      line-height: 24px;
+      position: absolute;
+      left: 25px;
+      top: 0;
+    }
+  }
+
+  &__blog {
+    max-width: 370px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__blog-title {
+    @include f-i;
+    line-height: 24px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+    text-transform: lowercase;
+
+    span {
+      @include f-b;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &__blog-message {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__blog-link {
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70px;
+    width: 100%;
+    min-height: 70px;
+  }
+
+  &__blog-img {
+  }
+
+  &__blog-info {
+    padding-left: 15px;
+    min-height: 70px;
+    flex: 1 1 auto;
+  }
+
+  &__blog-text {
+    color: #fff;
+  }
+
+  &__blog-date {
+    display: block;
+    color: rgba(#000, 0.5);
+  }
+}
+
 // * -------------------------------------------------
 
 .footer-copy {
