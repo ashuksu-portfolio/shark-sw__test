@@ -1,0 +1,18 @@
+@media (max-width: 1198px) {
+  .why {
+    &__row {
+      padding-top: 22.5vw;
+    }
+    &__image {
+      bottom: -9.4vw;
+    }
+
+    &__image--center {
+      bottom: -12.7vw;
+    }
+  }
+
+  .because {
+    padding-top: 16.85vw;
+  }
+}

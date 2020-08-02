@@ -577,9 +577,9 @@
 // !-------------------start why ---------------------------
 
 .why {
-  position: relative;
-  padding: 65px 0 265px;
+  padding-top: 65px;
   background-color: #ececec;
+  position: relative;
 
   &::after {
     content: "";
@@ -605,6 +605,38 @@
   &__text {
     text-align: center;
   }
+
+  &__row {
+    padding-top: 274px;
+    position: relative;
+    width: 100%;
+  }
+
+  &__image {
+    display: block;
+    position: absolute;
+    bottom: -115px;
+    z-index: 4;
+    border-radius: 10px;
+    max-width: 31.62393162393162%;
+    width: 100%;
+  }
+
+  &__image--center {
+    z-index: 5;
+    bottom: -156px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 48.71794871794872%;
+  }
+
+  &__image--left {
+    left: 0;
+  }
+
+  &__image--right {
+    right: 0;
+  }
 }
 
 // !-------------------end why ---------------------------
@@ -613,7 +645,8 @@
 
 .because {
   background-color: #f3f3f3;
-  padding: 205px 0 5px;
+  padding-bottom: 5px;
+  padding-top: 205px;
 
   &__inner {
     display: flex;
@@ -796,9 +829,6 @@
     }
   }
 
-  &__slider {
-  }
-
   &__slider-item {
     text-align: center;
     max-width: 170px;
@@ -945,9 +975,6 @@
     margin-bottom: 25px;
   }
 
-  &__item-list {
-  }
-
   &__item-link {
     line-height: 24px;
     padding-left: 40px;
@@ -1003,9 +1030,6 @@
     max-width: 70px;
     width: 100%;
     min-height: 70px;
-  }
-
-  &__blog-img {
   }
 
   &__blog-info {
