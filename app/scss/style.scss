@@ -8,6 +8,20 @@
 
 .header {
   background-color: $blue;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 9px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/path-bg-1.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 1;
+  }
 
   &__inner {
     height: 80px;
@@ -560,17 +574,24 @@
 
 // !-------------------end services ---------------------------
 
-// !-------------------start because ---------------------------
+// !-------------------start why ---------------------------
 
-.because {
-  padding-bottom: 35px;
-  background-color: #f3f3f3;
+.why {
+  position: relative;
+  padding: 65px 0 265px;
+  background-color: #ececec;
 
-  &__wrapper {
-    padding-top: 60px;
-    margin-bottom: 200px;
-
-    background-color: #ececec;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/path-bg-2.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    z-index: 1;
   }
 
   &__title {
@@ -582,31 +603,18 @@
   }
 
   &__text {
-    padding-bottom: 120px;
     text-align: center;
   }
-
-  &__tabs {
-  }
 }
 
-// * -------------------------------------------------
+// !-------------------end why ---------------------------
 
-.tabs {
-  &_content {
-  }
-}
+// !-------------------start because ----------------------
 
-.tab {
-}
+.because {
+  background-color: #f3f3f3;
+  padding: 205px 0 5px;
 
-.active-tab {
-}
-
-.active {
-}
-
-.tab-item {
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -615,13 +623,11 @@
   &__item {
     max-width: 270px;
     width: 100%;
+    margin-bottom: 30px;
 
     & + & {
       margin-left: 30px;
     }
-  }
-
-  &__item--list {
   }
 
   &__title {
@@ -630,9 +636,6 @@
     color: $grey-2;
     margin-bottom: 30px;
     padding-top: 5px;
-  }
-
-  &__list {
   }
 
   &__text {
@@ -648,30 +651,8 @@
     margin-right: 5px;
   }
 
-  &__item--skills {
-    max-width: 570px;
-  }
-
-  &__text--skills {
-    padding: 0 20px;
-    margin-bottom: 30px;
-    min-height: 80px;
-
-    a {
-      text-decoration: underline;
-      color: $tomato-2;
-    }
-  }
-
-  &__skills {
-  }
-
-  &__item--quotes {
-  }
-
   &__quotes {
     margin: 0;
-    // border: none;
   }
 
   &__text--quotes {
@@ -689,7 +670,25 @@
     font-size: 16px;
     font-style: normal;
   }
+
+  &__item--skills {
+    max-width: 570px;
+    margin-bottom: 0px;
+  }
+
+  &__text--skills {
+    padding: 0 20px;
+    margin-bottom: 30px;
+    min-height: 80px;
+
+    a {
+      text-decoration: underline;
+      color: $tomato-2;
+    }
+  }
 }
+
+// * -------------------------------------------------
 
 .skills {
   &__list {
@@ -703,6 +702,7 @@
     width: 100%;
     display: inline-block;
     text-align: center;
+    margin-bottom: 30px;
 
     & + li {
       margin-left: 20px;
@@ -869,6 +869,21 @@
 // !-------------------start footer ----------------------
 
 .footer {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/path-bg-3.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    z-index: 1;
+  }
+
   &__content {
     background-color: $blue;
     padding: 40px 0 5px;
