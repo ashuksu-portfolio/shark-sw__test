@@ -13,6 +13,21 @@ $(function () {
       // fade: true,
       cssEase: 'linear',
       initialSlide: 1,
+
+   });
+
+
+   $(".why__slider").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
    });
 
 
@@ -47,7 +62,14 @@ $(function () {
 
 
 
+   // * --------------------------------------------------------
 
+
+   $('.header__menu-btn').on('click', function () {
+      $('.menu__list').slideToggle();
+      $(this).toggleClass('rotate');
+
+   });
 
 
    // * --------------------------------------------------------

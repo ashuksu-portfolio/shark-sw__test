@@ -32,10 +32,11 @@
 
   &__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     z-index: 10;
+    width: 100%;
   }
 
   &__menu {
@@ -117,10 +118,8 @@
     }
   }
 
-  // *--------------------------------------
-
   &:hover {
-    max-width: 300px;
+    max-width: 285px;
 
     .header__search-text {
       transition: all 0.5s;
@@ -148,7 +147,6 @@
     margin-bottom: -20px;
     border-radius: 5px;
     position: relative;
-    z-index: 10;
 
     & + li {
       margin-left: 20px;
@@ -203,7 +201,6 @@
     font-size: 13px;
     background-color: rgba(255, 255, 255, 0);
     position: relative;
-    z-index: 50;
   }
 
   &__list-link--dropdown {
@@ -499,8 +496,8 @@
   &__item {
     background-color: #f8f8f8;
     border-radius: 5px;
-    max-width: 270px;
-    width: 100%;
+    // max-width: 270px;
+    // width: 100%;
     min-height: 314px;
     border-bottom: 4px solid #e5e6e6;
     padding: 50px 10px 0;
@@ -600,16 +597,23 @@
     font-size: 40px;
     line-height: 48px;
     text-align: center;
+    padding: 0 100px;
   }
 
   &__text {
     text-align: center;
+    padding: 0 70px;
   }
 
   &__row {
+    display: block;
     padding-top: 274px;
     position: relative;
     width: 100%;
+  }
+
+  &__slider {
+    display: none;
   }
 
   &__image {
@@ -728,18 +732,17 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    margin-left: -20px;
   }
 
   &__progress {
+    flex-basis: calc(25% - 20px);
+    margin-left: 20px;
     max-width: 120px;
     width: 100%;
     display: inline-block;
     text-align: center;
     margin-bottom: 30px;
-
-    & + li {
-      margin-left: 20px;
-    }
   }
 
   &__circle {
