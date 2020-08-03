@@ -127,6 +127,7 @@
         width: 20px;
         margin-bottom: 4px;
         background-color: $tomato-2;
+        transition: all 1s ease;
 
         &:last-child {
           margin-bottom: 0;
@@ -176,8 +177,7 @@
       transform: rotate(-180deg);
 
       div {
-        transition: all 1s ease;
-        background-color: $tomato;
+        background-color: #fff;
       }
     }
 
