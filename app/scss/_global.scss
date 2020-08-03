@@ -14,9 +14,13 @@ body {
 }
 
 body {
+  @include f-r;
+  font-size: 13px;
+  line-height: 20px;
+  color: $grey;
   overflow-x: hidden;
   position: relative;
-  min-width: 320px;
+  // min-width: 320px;
 }
 
 h1,
@@ -37,6 +41,7 @@ p {
 a {
   display: inline-block;
   color: inherit;
+  line-height: inherit;
   text-decoration: none;
 }
 
@@ -73,7 +78,7 @@ li {
   padding: 0 30px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1200px) {
   .container-fluid {
     padding: 0 15px;
   }
