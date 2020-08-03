@@ -91,10 +91,6 @@ $(function () {
 
    // * --------------------------------------------------------
 
-   new WOW().init();
-
-
-
 
    $(".main-slider__arrows--prev").addClass("wow rotateInDownLeft");
    $(".main-slider__arrows--next").addClass("wow rotateInDownRight");
@@ -112,6 +108,10 @@ $(function () {
    $(".footer-copy").addClass("wow fadeInDown");
 
 
+   
+   
+   
+   
    // * --------------------------------------------------------
 
 
@@ -170,7 +170,11 @@ $(function () {
       $(this).toggleClass('rotate');
 
    });
+   
 
+  // * --------------------------------------------------------
+
+   new WOW().init();
 
 
 
