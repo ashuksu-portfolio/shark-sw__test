@@ -27,7 +27,11 @@ $(function () {
       infinite: true,
       speed: 500,
       fade: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      draggable: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      swipe: false,
    });
 
 
@@ -36,6 +40,47 @@ $(function () {
       slidesToShow: 6,
       slidesToScroll: 3,
       dots: false,
+      responsive: [
+         {
+            breakpoint: 1090,
+            settings: {
+               slidesToShow: 5,
+            }
+         },
+         {
+            breakpoint: 920,
+            settings: {
+               slidesToShow: 4,
+            }
+         },
+         {
+            breakpoint: 730,
+            settings: {
+               slidesToShow: 3,
+            }
+         },
+         {
+            breakpoint: 565,
+            settings: {
+               slidesToShow: 2,
+            }
+         },
+
+         {
+            breakpoint: 391,
+            settings: {
+               slidesToShow: 1,
+               adaptiveHeight: true,
+               centerMode: true,
+               variableWidth: true,
+               autoplay: true,
+               autoplaySpeed: 1500,
+               infinite: true,
+               speed: 600,
+               // adaptiveHeight: true,
+            }
+         }
+      ]
 
    });
 
