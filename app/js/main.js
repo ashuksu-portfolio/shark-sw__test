@@ -97,11 +97,11 @@ $(function () {
       $('.menu__list').slideToggle();
       $(this).toggleClass('rotate');
 
+   });
 
-  
-   
-   
-   
+
+
+
    // * --------------------------------------------------------
 
 
@@ -170,9 +170,9 @@ $(function () {
    $(".footer__blog").addClass("wow fadeInUpBig").attr("data-wow-delay", "0.8s");
    $(".footer-copy").addClass("wow fadeInDown");
 
- 
 
-  // * --------------------------------------------------------
+
+   // * --------------------------------------------------------
 
 
    new WOW().init();
