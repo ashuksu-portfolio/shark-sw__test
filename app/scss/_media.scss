@@ -271,7 +271,7 @@
   }
 
   .main-slider__arrows {
-    display: none;
+    display: none !important;
   }
   .main-slider__title {
     font-size: 42px;
@@ -404,6 +404,7 @@
     }
   }
 }
+
 @media (max-width: 580px) {
   .footer__inner {
     justify-content: space-around;

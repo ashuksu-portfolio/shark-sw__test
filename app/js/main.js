@@ -18,6 +18,7 @@ $(function () {
       cssEase: 'linear',
       initialSlide: 1,
 
+
    });
 
 
@@ -104,42 +105,60 @@ $(function () {
    $(".why__image--right, .because__item--quotes").addClass("wow fadeInRight").attr("data-wow-offset", "200");
    $(".why__image--center").addClass("wow fadeIn").attr("data-wow-offset", "200");
    $(".ourclients__slider").addClass("wow fadeInRightBig");
-   $(".footer__contacts").addClass("wow flipInX").attr("data-wow-delay", "0.2s");
-   $(".footer__item--left").addClass("wow flipInX").attr("data-wow-delay", "0.4s");
-   $(".footer__item--right").addClass("wow flipInX").attr("data-wow-delay", "0.6s");
-   $(".footer__blog").addClass("wow flipInX").attr("data-wow-delay", "0.8s");
+   $(".footer__contacts").addClass("wow fadeInUpBig").attr("data-wow-delay", "0.2s");
+   $(".footer__item--left").addClass("wow fadeInUpBig").attr("data-wow-delay", "0.4s");
+   $(".footer__item--right").addClass("wow fadeInUpBig").attr("data-wow-delay", "0.6s");
+   $(".footer__blog").addClass("wow fadeInUpBig").attr("data-wow-delay", "0.8s");
    $(".footer-copy").addClass("wow fadeInDown");
-
-
-
-
-
-
-
-
-
-
 
 
    // * --------------------------------------------------------
 
 
-   $(".skills__progress").each(function () {
-      var $bar = $(this).find(".skills__bar");
-      var $val = $(this).find("span");
-      var perc = parseInt($val.text(), 10);
+   var block_show = false;
 
-      $({ p: 0 }).animate({ p: perc }, {
-         duration: 3000,
-         easing: "swing",
-         step: function (p) {
-            $bar.css({
-               transform: "rotate(" + (45 + (p * 1.8)) + "deg)",
+   function scrollTracking() {
+      if (block_show) {
+         return false;
+      }
+
+      var wt = $(window).scrollTop();
+      var wh = $(window).height();
+      var et = $('.skills__progress').offset().top;
+      var eh = $('.skills__progress').outerHeight();
+      var dh = $(document).height();
+
+      if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+         block_show = true;
+
+         $(".skills__progress").each(function () {
+            var $bar = $(this).find(".skills__bar");
+            var $val = $(this).find("span");
+            var perc = parseInt($val.text(), 10);
+
+            $({ p: 0 }).animate({ p: perc }, {
+               duration: 3000,
+               easing: "swing",
+               step: function (p) {
+                  $bar.css({
+                     transform: "rotate(" + (45 + (p * 1.8)) + "deg)",
+                  });
+                  $val.text(p | 0);
+               }
             });
-            $val.text(p | 0);
-         }
-      });
+         });
+
+      }
+   }
+
+   $(window).scroll(function () {
+      scrollTracking();
    });
+
+   $(document).ready(function () {
+      scrollTracking();
+   });
+
 
 
 
@@ -154,7 +173,6 @@ $(function () {
 
 
 
-   // * --------------------------------------------------------
 
 
 

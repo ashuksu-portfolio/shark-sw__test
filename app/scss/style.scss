@@ -4,35 +4,6 @@
 
 // * -------------------------------------------------
 
-@keyframes anim-menu {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-
-    transform: perspective(400px);
-  }
-}
-
-@keyframes rot {
-  100% {
-    transform: rotate(200deg);
-  }
-}
-
-.anim-menu-cl {
-  backface-visibility: visible !important;
-  animation-name: anim-menu;
-}
-
 // !-------------------start header ---------------------------------
 
 .header {
