@@ -1,5 +1,9 @@
 $(function () {
 
+
+   // * --------------------------------------------------------
+
+
    $(".main-slider").slick({
       nextArrow:
          '<button class="main-slider__arrows main-slider__arrows--next"></button>',
@@ -86,6 +90,39 @@ $(function () {
 
    // * --------------------------------------------------------
 
+   new WOW().init();
+
+
+
+
+   $(".main-slider__arrows--prev").addClass("wow rotateInDownLeft");
+   $(".main-slider__arrows--next").addClass("wow rotateInDownRight");
+   $(".header__inner, .main-slider__title, .main-slider__text, .why__title").addClass("wow flipInX");
+   $(".services__heading-btn").addClass("wow zoomInRight");
+   $(".services__item").addClass("wow fadeInUpBig").attr("data-wow-offset", "100");
+   $(".why__image--left, .because__item--list").addClass("wow fadeInLeft").attr("data-wow-offset", "200");
+   $(".why__image--right, .because__item--quotes").addClass("wow fadeInRight").attr("data-wow-offset", "200");
+   $(".why__image--center").addClass("wow fadeIn").attr("data-wow-offset", "200");
+   $(".ourclients__slider").addClass("wow fadeInRightBig");
+   $(".footer__contacts").addClass("wow flipInX").attr("data-wow-delay", "0.2s");
+   $(".footer__item--left").addClass("wow flipInX").attr("data-wow-delay", "0.4s");
+   $(".footer__item--right").addClass("wow flipInX").attr("data-wow-delay", "0.6s");
+   $(".footer__blog").addClass("wow flipInX").attr("data-wow-delay", "0.8s");
+   $(".footer-copy").addClass("wow fadeInDown");
+
+
+
+
+
+
+
+
+
+
+
+
+   // * --------------------------------------------------------
+
 
    $(".skills__progress").each(function () {
       var $bar = $(this).find(".skills__bar");
@@ -116,13 +153,9 @@ $(function () {
    });
 
 
+
    // * --------------------------------------------------------
 
 
-   // $(".app__img").addClass("wow fadeInLeft").attr("data-wow-offset", "200");
-
-   // $(".header").addClass("wow flipInX");
-
-   new WOW().init();
 
 });
