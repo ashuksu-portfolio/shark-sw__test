@@ -299,9 +299,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-}
 
-@media (max-width: 620px) {
   .because {
     &__title {
       margin-bottom: 20px;
@@ -317,7 +315,7 @@
   }
 
   .because .because__item {
-    margin-left: 0;
+    margin-left: 50px;
     margin-right: auto;
   }
 
@@ -377,6 +375,27 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .because {
+    &__item--list {
+      max-width: 270px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__item--quotes {
+      max-width: 350px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .because .because__item {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -459,6 +478,14 @@
 }
 
 @media (max-width: 360px) {
+  .because {
+    &__item--list,
+    &__item--quotes {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
   .why {
     &__title {
       padding: 0px;
