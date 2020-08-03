@@ -92,13 +92,16 @@ $(function () {
    // * --------------------------------------------------------
 
 
+
    $('.header__menu-btn').on('click', function () {
       $('.menu__list').slideToggle();
       $(this).toggleClass('rotate');
 
-   });
 
-
+  
+   
+   
+   
    // * --------------------------------------------------------
 
 
@@ -151,6 +154,7 @@ $(function () {
 
 
 
+
    $(".main-slider__arrows--prev").addClass("wow rotateInDownLeft");
    $(".main-slider__arrows--next").addClass("wow rotateInDownRight");
    $(".header__inner, .main-slider__title, .main-slider__text, .why__title").addClass("wow flipInX");
@@ -166,6 +170,9 @@ $(function () {
    $(".footer__blog").addClass("wow fadeInUpBig").attr("data-wow-delay", "0.8s");
    $(".footer-copy").addClass("wow fadeInDown");
 
+ 
+
+  // * --------------------------------------------------------
 
 
    new WOW().init();
