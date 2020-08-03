@@ -1022,9 +1022,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: start;
   }
 
   &__blog-link {
+    flex: 1 0 auto;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -1043,6 +1045,8 @@
 
   &__blog-text {
     color: #fff;
+    max-height: 100px;
+    overflow: hidden;
   }
 
   &__blog-date {
@@ -1072,6 +1076,9 @@
   &__social-list {
     display: flex;
     align-items: center;
+    max-width: 160px;
+    width: 100%;
+    justify-content: flex-end;
 
     li {
       display: flex;

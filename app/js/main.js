@@ -77,7 +77,6 @@ $(function () {
                autoplaySpeed: 1500,
                infinite: true,
                speed: 600,
-               // adaptiveHeight: true,
             }
          }
       ]
@@ -120,7 +119,9 @@ $(function () {
    // * --------------------------------------------------------
 
 
-   $(".app__img").addClass("wow fadeInLeft").attr("data-wow-offset", "200");
+   // $(".app__img").addClass("wow fadeInLeft").attr("data-wow-offset", "200");
+
+   // $(".header").addClass("wow flipInX");
 
    new WOW().init();
 
